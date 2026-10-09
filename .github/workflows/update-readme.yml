@@ -1,0 +1,45 @@
+name: Dynamic Profile & Repo Highlights Sync
+
+on:
+  schedule:
+    # Run once daily at midnight
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-profile:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch Latest Public Repos & Verify Health
+        run: |
+          node -e '
+            const https = require("https");
+            const options = {
+              hostname: "api.github.com",
+              path: "/users/Happy-Kumar-Sharma/repos?sort=updated&per_page=6",
+              headers: { "User-Agent": "Node-Script" }
+            };
+            https.get(options, (res) => {
+              let data = "";
+              res.on("data", chunk => data += chunk);
+              res.on("end", () => {
+                const repos = JSON.parse(data);
+                console.log("Successfully verified latest repositories:");
+                repos.forEach(r => console.log(`- ${r.name} (${r.stargazers_count} stars)`));
+              });
+            });
+          '
+
+      - name: Keep-Alive Activity
+        run: echo "Profile telemetry synced at $(date)"

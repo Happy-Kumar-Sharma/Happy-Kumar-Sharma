@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Kumar Sharma — GitHub Profile README Live Preview</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.0/github-markdown-dark.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .header-bar {
+      max-width: 980px;
+      width: 100%;
+      background: linear-gradient(135deg, #1f242c 0%, #161b22 100%);
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 16px 24px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+    .badge {
+      background: #238636;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+    .container {
+      max-width: 980px;
+      width: 100%;
+      background-color: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
+    }
+    .markdown-body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    a.btn-github {
+      background: #21262d;
+      color: #58a6ff;
+      border: 1px solid #30363d;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 13px;
+      transition: all 0.2s;
+    }
+    a.btn-github:hover {
+      background: #30363d;
+      border-color: #8b949e;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-bar">
+    <div>
+      <span class="badge">GITHUB SPECIAL PROFILE README</span>
+      <h2 style="margin: 8px 0 4px 0; color: #f0f6fc;">Happy-Kumar-Sharma / README.md</h2>
+      <p style="margin: 0; font-size: 13px; color: #8b949e;">Live Preview Render with Animated Widgets, SVG Graphics & Game Mechanics</p>
+    </div>
+    <div>
+      <a class="btn-github" href="https://github.com/Happy-Kumar-Sharma/Happy-Kumar-Sharma" target="_blank">Open Profile Repo ↗</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <article id="content" class="markdown-body"></article>
+  </div>
+
+  <script>
+    fetch('README.md')
+      .then(response => response.text())
+      .then(text => {
+        document.getElementById('content').innerHTML = marked.parse(text);
+      })
+      .catch(err => {
+        console.error("Fetch failed", err);
+      });
+  </script>
+</body>
+</html>
