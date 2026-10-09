@@ -5,7 +5,7 @@
 
 <!-- ANIMATED TYPING SUBHEADER -->
 <a href="https://happy-sharma-resume.vercel.app/">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=00F0FF&center=true&vCenter=true&random=false&width=780&lines=%E2%9A%A1+Python+%26+Distributed+Systems+Architect;%F0%9F%9B%A0%EF%B8%8F+Author+of+pyerror-intel+%26+SecureLogs+Libraries;%F0%9F%A7%A9+VS+Code+Extension+Developer+(CodeSight+%26+LLM+Copilot);%F0%9F%A4%96+AI+Agent+Orchestration+%26+Autonomous+Pipelines;%F0%9F%8E%AE+Pickup+Sports+Matchmaker+%26+Interactive+Game+Architect;%F0%9F%9A%80+Founder+%40+BusinessAra+-+Engineering+Modern+Software" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=00F0FF&center=true&vCenter=true&random=false&width=800&lines=%E2%9A%A1+Python+%26+Distributed+Systems+Architect;%F0%9F%9B%A0%EF%B8%8F+Author+of+pyerror-intel+%26+SecureLogs+Libraries;%F0%9F%A7%A9+VS+Code+Extension+Developer+(CodeSight+%26+LLM+Copilot);%F0%9F%A4%96+AI+Agent+Orchestration+%26+Autonomous+Pipelines;%F0%9F%8E%AE+Pickup+Sports+Matchmaker+%26+Interactive+Game+Architect;%F0%9F%9A%80+Founder+%40+BusinessAra+-+Engineering+Modern+Software" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -15,8 +15,11 @@
   <a href="#-flagship-open-source-libraries--packages"><b>[ 🚀 Open-Source ]</b></a> •
   <a href="#-vs-code-extensions"><b>[ 🧩 Extensions ]</b></a> •
   <a href="#-full-stack-saas--live-production-deployments"><b>[ 🌐 SaaS Apps ]</b></a> •
+  <a href="#-system-blueprints--core-architecture-deep-dive"><b>[ 📐 Blueprints ]</b></a> •
   <a href="#-contribution-history--the-arcade-snake-arena"><b>[ 🎮 Games & History ]</b></a> •
   <a href="#-live-github-telemetry--stats"><b>[ 📊 Telemetry ]</b></a> •
+  <a href="#-problem-solving--systems-domain-mastery"><b>[ 🧠 Algorithms ]</b></a> •
+  <a href="#-coding-frequency--developer-soundtrack"><b>[ 🎧 Soundtrack ]</b></a> •
   <a href="#-lets-connect--collaborate"><b>[ 💬 Connect ]</b></a>
 </p>
 
@@ -110,6 +113,15 @@ Passive Buffs:
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Happy-Kumar-Sharma/Happy-Kumar-Sharma/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Happy-Kumar-Sharma/Happy-Kumar-Sharma/output/github-contribution-grid-snake.svg">
   <img alt="GitHub Contribution Grid Snake Animation" src="https://raw.githubusercontent.com/Happy-Kumar-Sharma/Happy-Kumar-Sharma/output/github-contribution-grid-snake.svg" width="100%" />
+</picture>
+
+<br/>
+
+<!-- 3D ISOMETRIC CONTRIBUTION SKYLINE -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Happy-Kumar-Sharma/Happy-Kumar-Sharma/main/profile-3d-contrib/profile-night-view.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Happy-Kumar-Sharma/Happy-Kumar-Sharma/main/profile-3d-contrib/profile-green-view.svg">
+  <img alt="GitHub 3D Contribution Skyline" src="https://raw.githubusercontent.com/Happy-Kumar-Sharma/Happy-Kumar-Sharma/main/profile-3d-contrib/profile-night-view.svg" width="100%" />
 </picture>
 
 </div>
@@ -252,6 +264,90 @@ flowchart LR
 
 ---
 
+## 📐 System Blueprints & Core Architecture Deep-Dive
+
+<details open>
+<summary><b>🧠 1. Architecture: <code>pyerror-intel</code> Diagnostics Interceptor (Click to collapse)</b></summary>
+<br/>
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant App as User Script / Production App
+    participant Hook as sys.excepthook (Pyerror)
+    participant Mask as AST & Local Scope Redactor
+    participant Diag as Diagnostic Heuristic Matcher
+    participant Out as Humanized Console / JSON Stream
+
+    App->>Hook: Uncaught Exception / Traceback Raised
+    Hook->>Mask: Inspect Stack Frames & Scope Variables
+    Mask->>Mask: Mask PII (Auth Tokens, Passwords, Card Numbers)
+    Mask->>Diag: Query 28 Public Diagnostic Rules
+    Diag->>Out: Format Humanized Diagnostic Card with Fix Advice
+    Out-->>App: Graceful Exit or Fallback Error Recovery
+```
+
+* **Zero-Overhead Interception:** Injects cleanly into the Python runtime without monkey-patching bytecode.
+* **Security Guard:** Scans local variable dictionaries (`locals()`) for secret keywords and replaces them with `***REDACTED***`.
+* **Actionable Remediation:** Maps esoteric standard library exceptions to conversational advice and code suggestions.
+
+</details>
+
+<br/>
+
+<details>
+<summary><b>🔍 2. Architecture: <code>CodeSight Dynamic Visualizer</code> DAP Engine (Click to expand)</b></summary>
+<br/>
+
+```mermaid
+flowchart LR
+    subgraph VSCode Core
+        A[Breakpoint Hit] --> B[Debug Adapter Protocol - DAP]
+    end
+    subgraph CodeSight Extension Host
+        B -->|Event Stream| C[DAP Event Listener]
+        C --> D[Stack & Heap Object Serializer]
+        D -->|JSON-RPC IPC| E[Webview Panel Provider]
+    end
+    subgraph Visualizer Webview UI
+        E --> F[Interactive Memory Map & Pointer Graph]
+    end
+```
+
+* **Protocol-Agnostic:** Connects to any standard DAP-compliant language server (Python `debugpy`, C/C++ `cppdbg`).
+* **Interactive State Rendering:** Converts flat object IDs into connected pointer arrows and nested data structures in real time.
+
+</details>
+
+<br/>
+
+<details>
+<summary><b>🤖 3. Architecture: <code>Agent Orchestra</code> Multi-LLM Web Orchestration (Click to expand)</b></summary>
+<br/>
+
+```mermaid
+flowchart TD
+    Prompt[User High-Level Task] --> Daemon[Agent Orchestra Orchestrator]
+    Daemon --> Local[Phase 1: Local Repo AST Analysis]
+    Local --> Sessions[Phase 2: Simultaneous Web Sessions]
+    subgraph Browser Automation Mesh (Zero API Cost)
+        Sessions --> CPT[ChatGPT Session]
+        Sessions --> CLD[Claude Session]
+        Sessions --> GEM[Gemini Session]
+        Sessions --> DSK[DeepSeek Session]
+    end
+    CPT & CLD & GEM & DSK --> Adjudication[Phase 3: Cross-Critique & Conflict Resolution]
+    Adjudication --> Synthesis[Phase 4: Synthesis & Verification]
+    Synthesis --> Output[Implementation Plan & Coding Context on Local Disk]
+```
+
+* **Zero Key Overhead:** Drives authenticated browser profiles directly via automated sessions.
+* **Deterministic Output:** Ensures plans are written to predictable paths inside `<repo>/docs/agent-orchestra/<task>/`.
+
+</details>
+
+---
+
 ## 🌟 Dynamic Repository Highlights (Auto-Updated)
 
 <!-- DYNAMIC REPOSITORY CARDS -->
@@ -328,6 +424,22 @@ The profile includes an automated GitHub Actions workflow (`.github/workflows/up
 
 ---
 
+## 🧠 Problem-Solving & Systems Domain Mastery
+
+<div align="center">
+
+| Domain | Key Focus & Specialties | Proficiency Level |
+| :--- | :--- | :---: |
+| **Distributed Systems** | Event Streams, Microservices Decomposition, Dead-Letter Queues, Sharding | `[████████████████████] 98%` |
+| **System Resiliency** | Error Diagnostics, Graceful Recovery, Local Scope Sanitization, TDD | `[████████████████████] 97%` |
+| **API & Protocols** | REST, WebSockets, Debug Adapter Protocol (DAP), OAuth2 / Keycloak OIDC | `[███████████████████░] 95%` |
+| **Data Pipelines** | Real-time Ingestion, Kafka Partitioning, NiFi Process Groups, Redis Caches | `[██████████████████░░] 92%` |
+| **Algorithms & Optimization** | Graph Traversal, A* Pathfinding, Heuristic Caching, Dynamic Programming | `[██████████████████░░] 90%` |
+
+</div>
+
+---
+
 ## 🛠️ Weaponry & Technology Stack
 
 <div align="center">
@@ -376,6 +488,25 @@ The profile includes an automated GitHub Actions workflow (`.github/workflows/up
 
 ---
 
+## 🎧 Coding Frequency & Developer Soundtrack
+
+<div align="center">
+
+```text
+╭─────────────────────────────────────────────────────────────╮
+│  🎧 BROADCASTING FREQUENCY: DEEP-FOCUS CODE MATRIX           │
+│  Track:   Synthwave & Ambient Drone for Distributed Systems │
+│  Bitrate: 320 kbps lossless • Latency: 0.2ms               │
+│  Status:  🟢 ACTIVE FLOW STATE — COMPILING IDEAS           │
+│  Progress: [██████████████████████████████░░░░] 78%         │
+│  Controls: [ ◀◀  PAUSE ❚❚  ▶▶ ]      Volume: [████████░░]   │
+╰─────────────────────────────────────────────────────────────╯
+```
+
+</div>
+
+---
+
 ## 💡 Engineering Philosophy & Dev Daily
 
 <div align="center">
@@ -386,6 +517,10 @@ The profile includes an automated GitHub Actions workflow (`.github/workflows/up
 
 <a href="https://github.com/Happy-Kumar-Sharma">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev Quote" />
+</a>
+&nbsp;
+<a href="https://github.com/Happy-Kumar-Sharma">
+  <img src="https://readme-jokes.vercel.app/api?theme=tokyonight&hideBorder=true" alt="Dev Joke" />
 </a>
 
 </div>
