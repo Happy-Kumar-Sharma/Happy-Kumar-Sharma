@@ -196,12 +196,13 @@ flowchart LR
 
 | Platform | Tech Stack | Architecture & Mission |
 | :--- | :--- | :--- |
-| **[ParkEase (carparking)](https://github.com/Happy-Kumar-Sharma/carparking)** | `Next.js 15` `TypeScript` `Tailwind v4` `Prisma` `MySQL` `Leaflet OSM` | Two-sided commercial parking marketplace with interactive geo-mapping, overbooking-safe reservations, and gate-code check-ins. |
+| **[ParkEase (carparking)](https://parkeas.vercel.app)** | `Next.js 15` `TypeScript` `Tailwind v4` `Prisma` `MySQL` `Leaflet OSM` | Two-sided commercial parking marketplace with interactive geo-mapping, overbooking-safe reservations, and gate-code check-ins. |
 | **[LineUp](https://github.com/Happy-Kumar-Sharma/LineUp)** | `Android Native` `Gradle` `Web Engine` `Phosphor` `Node.js` | Pickup sports matchmaker organizing nearby cricket, football, and tennis games with 10km radius smart invites. |
-| **[Invitee](https://github.com/Happy-Kumar-Sharma/invitee)** | `Next.js 15` `TypeScript` `Tailwind` `MySQL` `React-PDF` | Luxury digital wedding and event invitation platform with WhatsApp ordering and real-time RSVP analytics. |
-| **[Event Command Center](https://github.com/Happy-Kumar-Sharma/event)** | `Next.js 15` `React 19` `Drizzle ORM` `MySQL 8` `Tailwind` | Multi-tenant SaaS platform managing global corporate offsites, airport travel logistics, and executive duty-of-care. |
+| **[Invitee](https://inviti-psi.vercel.app)** | `Next.js 15` `TypeScript` `Tailwind` `MySQL` `React-PDF` | Luxury digital wedding and event invitation platform with WhatsApp ordering and real-time RSVP analytics. |
+| **[Event Command Center](https://evanti-five.vercel.app)** | `Next.js 15` `React 19` `Drizzle ORM` `MySQL 8` `Tailwind` | Multi-tenant SaaS platform managing global corporate offsites, airport travel logistics, and executive duty-of-care. |
 | **[Ferry](https://github.com/Happy-Kumar-Sharma/ferry)** | `Next.js` `Prisma` `MySQL` `Jose` `Tailwind` | Hyperlocal trusted runner network platform turning daily errand runs between family and neighbours into a transparent ecosystem. |
-| **[Wish-List-Portal](https://github.com/Happy-Kumar-Sharma/Wish-List-Portal)** | `Next.js App Router` `Prisma` `MySQL` `TypeScript` | Full-stack wishlist management application with analytics, role-based controls, and responsive UI. |
+| **[Wish-List-Portal](https://wish-list-portal.vercel.app)** | `Next.js App Router` `Prisma` `MySQL` `TypeScript` | Full-stack wishlist management application with analytics, role-based controls, and responsive UI. |
+| **[Topper Learning Portal](https://topper-red.vercel.app)** | `Next.js App Router` `Prisma` `MySQL` `TypeScript` | Full-stack learning platform for students with interactive quizzes, progress tracking, and gamified learning paths. |
 
 </div>
 
